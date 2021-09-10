@@ -2,11 +2,14 @@ import './SpaceContainer.css'
 
 const SpaceContainer = ({ epicData }) => {
   console.log(epicData)
-  return (
-    <article>
-      <h3>hi</h3>
-    </article>
-  )
+  return epicData.map(element => {
+    return (
+      <article>
+        <h3>{element.explanation}</h3>
+        <img src={element.url} alt='this is something' />
+      </article>
+    ) 
+  })
 }
 
 
