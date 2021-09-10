@@ -10,13 +10,17 @@ class HomePage extends Component {
     }
   }
 
+  
+
   componentDidMount() {
-    fetch('https://epic.gsfc.nasa.gov/api/enhanced?api_key=1xvzSUJvKIPsf7PliA1VJPYWMTVNda8BblYK7z3r')
+    fetch('https://api.nasa.gov/planetary/apod?api_key=1xvzSUJvKIPsf7PliA1VJPYWMTVNda8BblYK7z3r&count=10')
       .then(res => res.json())
+      // .then(data => console.log(data))
       .then(data => this.setState({epicData: data}))
   }
 
   render() {
+    console.log('data', this.state.epicData)
     return (
       <>
         <h2>party ppl!</h2>
