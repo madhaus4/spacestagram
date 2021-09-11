@@ -1,18 +1,14 @@
 import './SpaceContainer.css'
+import SpaceCard from '../SpaceCard/SpaceCard'
 
 const SpaceContainer = ({ epicData }) => {
-  console.log(epicData)
-  return epicData.map(element => {
-    return (
-      <article key={Date.now()}>
-        <img src={element.url} alt='this is something' />
-        <h2>{element.title}</h2>
-        <h3>{element.date}</h3>
-        <p>{element.explanation}</p>
-        <h4>{element.copyright}</h4>
-      </article>
-    ) 
+  console.log('epicData', epicData)
+  let theEpic = epicData.map(element => {
+    return <SpaceCard epicData={element} key={Date.now()} />
   })
+  return (
+    <>{theEpic}</>
+  )
 }
 
 
