@@ -7,7 +7,7 @@ const SpaceContainer = ({ epicData }) => {
     return <SpaceCard epicData={element} key={Date.now()} />
   })
   return (
-    <>{theEpic}</>
+    <main>{theEpic}</main>
   )
 }
 
