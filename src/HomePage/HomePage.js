@@ -6,7 +6,8 @@ class HomePage extends Component {
   constructor() {
     super();
     this.state = {
-      epicData: []
+      epicData: [],
+      likedPosts: [],
     }
   }
 
@@ -16,10 +17,17 @@ class HomePage extends Component {
       .then(data => this.setState({epicData: data}))
   }
 
+  likeAPost = (newlyLiked) => {
+    this.setState({likedPosts: newlyLiked})
+  }
+
   render() {
     return (
       <>
-        <SpaceContainer epicData={this.state.epicData}/>
+        <SpaceContainer 
+          epicData={this.state.epicData}
+          likeAPost={this.likeAPost}
+        />
       </>
     )
   }
