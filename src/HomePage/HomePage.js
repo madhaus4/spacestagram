@@ -18,10 +18,14 @@ class HomePage extends Component {
   }
 
   likeAPost = (newlyLiked) => {
-    this.setState({likedPosts: newlyLiked})
+    newlyLiked = {
+      id: Date.now() 
+    }
+    this.setState({likedPosts: [...this.state.likedPosts, newlyLiked]})
   }
 
   render() {
+    console.log('liked', this.state.likedPosts)
     return (
       <>
         <SpaceContainer 
