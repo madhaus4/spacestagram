@@ -3,14 +3,16 @@
 }
 
 article {
-  width: 45vw;
+  width: 30vw;
   height: fit-content;
+  margin: 5px;
   border: 1px solid #dddddd5c;
   border-radius: 1%;
+  background-color: whitesmoke;
 }
 
 .img-container {
-  width: 45vw;
+  /* width: 45vw; */
   /* height: 40%; */
 }
 
