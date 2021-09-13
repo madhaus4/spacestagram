@@ -1,13 +1,16 @@
 import './SpaceCard.css'
 
-const SpaceCard = ({ epicData }) => {
+const SpaceCard = ({ epicData, addToFavorites }) => {
   return (
     <article>
       <div className='img-container'>
         <img src={epicData.url} alt='this is something' />
       </div>
       <div className='btn-container'>
-        <button>Like</button>
+        <button
+          onClick={() => addToFavorites(epicData)}
+          >Like
+        </button>
       </div>
       <div className='card-info'>
         <h2>{epicData.title}</h2>
