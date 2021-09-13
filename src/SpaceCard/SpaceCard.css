@@ -5,9 +5,13 @@
 article {
   width: 45vw;
   height: fit-content;
-  /* height: 80vh; */
-  border: 1px solid black;
+  border: 1px solid #dddddd5c;
   border-radius: 1%;
+}
+
+.img-container {
+  width: 45vw;
+  /* height: 40%; */
 }
 
 img {
@@ -24,7 +28,7 @@ img {
 button {
   position: relative;
   z-index: 10;
-  margin: 1.5%;
+  margin: 2% 3%;
 }
 
 .card-info {
