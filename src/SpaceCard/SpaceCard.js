@@ -6,8 +6,9 @@ const SpaceCard = ({ epicData, addToFavorites }) => {
       <div className='img-container'>
         <img src={epicData.url} alt='this is something' />
       </div>
-      <div className='btn-container'>
+      <div className='article-btn-container'>
         <button
+        className='like-btn'
           onClick={() => addToFavorites(epicData)}
           >Like
         </button>
