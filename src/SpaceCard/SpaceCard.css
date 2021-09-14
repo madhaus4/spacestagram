@@ -3,17 +3,16 @@
 }
 
 article {
-  width: 30vw;
+  /* width: 30vw; */
   height: fit-content;
-  margin: 5px;
+  /* margin: 5px; */
+  margin: 5vh 0;
   border: 1px solid #dddddd5c;
   border-radius: 1%;
   background-color: whitesmoke;
-}
 
-.img-container {
-  /* width: 45vw; */
-  /* height: 40%; */
+  display: inline-block;
+  width: 100%;
 }
 
 img {
@@ -39,6 +38,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  display:block;
 }
 
 .card-info > h2 {
