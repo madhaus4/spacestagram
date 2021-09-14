@@ -42,6 +42,17 @@ h1 {
   margin: 1vh;
 }
 
+.btn-container {
+  position: relative;
+  z-index: 14;
+  top: -7vh;
+  left: 80vw;
+  width: 15vw;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
 
-
-
+button {
+  margin: 0;
+}
