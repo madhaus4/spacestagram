@@ -6,7 +6,11 @@ const App = () => {
   return (
     <div className="App">
       <header>
-      <h1>Spacetagram</h1>
+        <h1>Spacestagram</h1>
+        <div>
+          <button>View Likes</button>
+          <button>View All</button>
+        </div>
       </header>
       <HomePage />
     </div>
