@@ -1,13 +1,23 @@
 main {
   /* width: 100vw; */
   height: fit-content;
-  background-color: #dddddda1;
+  /* background-color: #dddddda1; */
   /* display: flex; */
-  overflow: auto;
+  /* overflow: auto; */
+  padding: 0 5vh 10vh 5vh;
+  /* margin-bottom: 5vh; */
+  margin: 8% 1%;
 
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 5px;
-  grid-row-gap: 5px;
+  grid-row-gap: 5px; */
+
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 15px;
+  -moz-column-gap: 15px;
+  column-gap: 15px;
 }
