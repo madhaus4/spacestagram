@@ -1,6 +1,7 @@
 // import { Component } from 'react';
 import React, { useState, useEffect } from 'react';
 import SpaceContainer from '../SpaceContainer/SpaceContainer';
+import Header from '../Header/Header';
 import './HomePage.css'
 
 const HomePage = () => {
@@ -29,6 +30,7 @@ const HomePage = () => {
 
   return (
     <>
+      <Header />
       <SpaceContainer 
         epicData={epicData}
         addToFavorites={addToFavorites}
