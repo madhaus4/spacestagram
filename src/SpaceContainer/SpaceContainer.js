@@ -5,8 +5,9 @@ const SpaceContainer = ({ epicData, addToFavorites }) => {
 
 
   let theEpic = epicData.map(element => {
+    // console.log(element)
     return <SpaceCard 
-      // key={Date.now()} 
+      key={element.title + element.date} 
       epicData={element} 
       addToFavorites={addToFavorites}
     />
