@@ -7,6 +7,7 @@ import './HomePage.css'
 const HomePage = () => {
   const [epicData, setEpicData] = useState([])
   const [favoritedPosts, setFavoritedPosts] = useState([])
+  const [isFavorited, setIsFavorited] = useState(false)
 
   const fetchData = () => {
     fetch('https://api.nasa.gov/planetary/apod?api_key=1xvzSUJvKIPsf7PliA1VJPYWMTVNda8BblYK7z3r&count=10')
@@ -27,13 +28,17 @@ const HomePage = () => {
   }
   console.log('favoritedPosts', favoritedPosts)
 
+  const toggleFavoritesDisplay = () => {
+    setIsFavorited(!isFavorited)
+  }
 
   return (
     <>
-      <Header />
+      <Header toggleFavoritesDisplay={toggleFavoritesDisplay}/>
       <SpaceContainer 
         epicData={epicData}
         addToFavorites={addToFavorites}
+        favoritedPosts={favoritedPosts}
       />
     </>
   )
