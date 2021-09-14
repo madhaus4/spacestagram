@@ -1,8 +1,9 @@
 import './SpaceContainer.css'
 import SpaceCard from '../SpaceCard/SpaceCard'
 
-const SpaceContainer = ({ epicData, addToFavorites }) => {
+const SpaceContainer = ({ epicData, addToFavorites, favoritedPosts }) => {
 
+  
 
   let theEpic = epicData.map(element => {
     // console.log(element)
