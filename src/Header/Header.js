@@ -1,20 +1,20 @@
 import './Header.css'
 
-function Header(props) {
+function Header({ toggleFavoritesDisplay, isFavorited}) {
   return (
     <header>
     <h1>Spacestagram</h1>
     <div className='btn-container'>
       <button 
         className='view-likes-btn'
-        onClick={() => props.toggleFavoritesDisplay()}
-        >View Likes
+        onClick={() => toggleFavoritesDisplay()}
+        >{!isFavorited ? 'View All' : 'View Favorites'}
       </button>
-      <button 
+      {/* <button 
         className='view-all-btn'
-        onClick={() => props.toggleFavoritesDisplay()}
+        onClick={() => toggleFavoritesDisplay()}
         >View All
-      </button>
+      </button> */}
     </div>
   </header>
   )
