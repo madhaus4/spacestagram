@@ -1,0 +1,12 @@
+footer {
+  width: 98%;
+  height: 20vh;
+  border-top: 5px solid #000000d1;
+  padding: 1vh;
+}
+
+.footer-text {
+  padding: 2vh;
+  font-size: 1.5em;
+  width: max-content;
+}
