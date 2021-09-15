@@ -27,3 +27,40 @@ h1 {
 button {
   margin: 0;
 }
+
+
+@media screen and (max-width: 750px) {
+  .btn-container {
+    left: 72vw;
+    width: 20vw;
+    padding: 1%;
+  }
+}
+
+
+@media screen and (max-width: 520px) {
+  h1 {
+    padding: 1vh 3vh;
+  }
+
+  .btn-container {
+    top: -3vh;
+    left: 62vw;
+    width: 25vw;
+    padding: 1%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .btn-container {
+    left: 59vw;
+    width: 28vw;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .btn-container {
+    left: 52vw;
+    width: 34vw;
+  }
+}
