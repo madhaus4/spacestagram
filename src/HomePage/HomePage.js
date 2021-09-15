@@ -41,6 +41,9 @@ const HomePage = () => {
         addToFavorites={addToFavorites}
         favoritedPosts={favoritedPosts}
       />
+      <footer>
+        <p className='footer-text'>Thanks for visiting!</p>
+      </footer>
     </>
   )
 }
