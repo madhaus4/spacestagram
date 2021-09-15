@@ -4,7 +4,8 @@ header {
   border-bottom: 2px solid #808080c4;
   position: fixed;
   z-index: 15;
-  background-color: white;
+  background-color:#000000d1;
+  color: whitesmoke;
 }
 
 h1 {
