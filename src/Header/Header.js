@@ -8,13 +8,8 @@ function Header({ toggleFavoritesDisplay, isFavorited}) {
       <button 
         className='view-likes-btn'
         onClick={() => toggleFavoritesDisplay()}
-        >{!isFavorited ? 'View All' : 'View Favorites'}
+        >{isFavorited ? 'Home' : 'View Favorites'}
       </button>
-      {/* <button 
-        className='view-all-btn'
-        onClick={() => toggleFavoritesDisplay()}
-        >View All
-      </button> */}
     </div>
   </header>
   )
