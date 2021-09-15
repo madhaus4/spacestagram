@@ -4,11 +4,10 @@
 
 .App {
   text-align: center;
-  /* height: 95vh; */
-  width: 98vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
-  /* background-color: #dddddda1; */
+  background-color: #e6e6e6;
 }
