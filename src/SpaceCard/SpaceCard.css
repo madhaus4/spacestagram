@@ -57,3 +57,10 @@ img {
   text-align: start;
   padding: 1.5% 0;
 }
+
+
+@media screen and (max-width: 640px) {
+  .article-btn-container {
+    left: 75%;
+  }
+}
