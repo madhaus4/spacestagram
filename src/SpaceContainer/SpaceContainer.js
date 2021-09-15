@@ -4,9 +4,8 @@ import SpaceCard from '../SpaceCard/SpaceCard'
 const SpaceContainer = ({ epicData, addToFavorites, favoritedPosts }) => {
 
   
-
+  
   let theEpic = epicData.map(element => {
-    // console.log(element)
     return <SpaceCard 
       key={element.title + element.date} 
       epicData={element} 
