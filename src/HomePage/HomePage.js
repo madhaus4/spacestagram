@@ -26,7 +26,6 @@ const HomePage = () => {
     }
     setFavoritedPosts([...favoritedPosts, likedPost])
   }
-  console.log('favoritedPosts', favoritedPosts)
 
   const toggleFavoritesDisplay = () => {
     setIsFavorited(!isFavorited)
@@ -34,7 +33,10 @@ const HomePage = () => {
 
   return (
     <>
-      <Header toggleFavoritesDisplay={toggleFavoritesDisplay}/>
+      <Header 
+        isFavorited={isFavorited}
+        toggleFavoritesDisplay={toggleFavoritesDisplay}
+      />
       <SpaceContainer 
         epicData={epicData}
         addToFavorites={addToFavorites}
