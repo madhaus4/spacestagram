@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { cleanData } from '../utilities'
+import { cleanData } from '../../utils/utilities'
 import SpaceContainer from '../SpaceContainer/SpaceContainer';
 import Header from '../Header/Header';
 import './HomePage.css'

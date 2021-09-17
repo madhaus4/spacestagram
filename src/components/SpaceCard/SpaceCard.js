@@ -1,6 +1,6 @@
 import './SpaceCard.css'
-import unfavoritedIcon from '../unfavorited.svg'
-import favoritedIcon from '../favorited.svg'
+import unfavoritedIcon from '../images/unfavorited.svg'
+import favoritedIcon from '../images/favorited.svg'
 
 const SpaceCard = ({ epicData, updateFavorites }) => {
   // if (epicData.media_type !== 'video') {
