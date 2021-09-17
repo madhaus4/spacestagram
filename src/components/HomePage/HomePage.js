@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { getData } from '../../utils/apiCalls'
 import { cleanData } from '../../utils/utilities'
-import SpaceContainer from '../SpaceContainer/SpaceContainer';
 import Header from '../Header/Header';
+import SpaceContainer from '../SpaceContainer/SpaceContainer';
 import './HomePage.css'
 
 const HomePage = () => {
@@ -11,8 +11,10 @@ const HomePage = () => {
   const [isFavoritedDisplayed, setisFavoritedDisplayed] = useState(false)
 
   useEffect(() => {
-      getData().then(data => setEpicData(cleanData(data)))
-      retrieveFromStorage()
+    retrieveFromStorage()
+    getData()
+      .then(data => setEpicData(cleanData(data)))
+      .catch(error => console.log('ERR: ', error))
   }, [])
 
   const updateFavorites = (post) => {
