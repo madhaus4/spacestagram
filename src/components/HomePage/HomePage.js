@@ -18,13 +18,11 @@ const HomePage = () => {
   useEffect(() => {
       fetchData()
       retrieveFromStorage()
-      console.log('favoritedPosts~~~ ', favoritedPosts)
   }, [])
 
   const updateFavorites = (post) => {
-    console.log('post~~~ ', post)
     let foundFavorite = favoritedPosts.find(favorite => favorite.title === post.title)
-    console.log('foundFavorite~~~ ', foundFavorite)
+
     handleFavorite(foundFavorite || post)
     foundFavorite ? removeFromFavorites(foundFavorite) : addToFavorites(post)
   }
@@ -35,10 +33,8 @@ const HomePage = () => {
       isFavorited: true,
       ...post
     }
-    console.log('likedPost~~~ ', likedPost)
     setFavoritedPosts([...favoritedPosts, likedPost])
     saveToStorage(likedPost)
-    // handleFavorite(likedPost)
   }
 
   const handleFavorite = (favorite) => {
