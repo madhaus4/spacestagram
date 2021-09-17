@@ -18,18 +18,14 @@ const HomePage = () => {
   useEffect(() => {
       fetchData()
       retrieveFromStorage()
+      console.log('favoritedPosts~~~ ', favoritedPosts)
   }, [])
 
-  const handleFavorite = (favorite) => {
-    // console.log('favorite++ ', favorite)
-    const foundPost = epicData.find(post => post.title === favorite.title)
-    // console.log('foundPost++ ', foundPost)
-    foundPost.isFavorited = !foundPost.isFavorited
-  }
-
   const updateFavorites = (post) => {
-    let foundFavorite = favoritedPosts.find(favorite => favorite.id === post.id)
-
+    console.log('post~~~ ', post)
+    let foundFavorite = favoritedPosts.find(favorite => favorite.title === post.title)
+    console.log('foundFavorite~~~ ', foundFavorite)
+    handleFavorite(foundFavorite || post)
     foundFavorite ? removeFromFavorites(foundFavorite) : addToFavorites(post)
   }
 
@@ -39,10 +35,15 @@ const HomePage = () => {
       isFavorited: true,
       ...post
     }
-    // console.log('likedPost>>> ', likedPost)
-    saveToStorage(likedPost)
+    console.log('likedPost~~~ ', likedPost)
     setFavoritedPosts([...favoritedPosts, likedPost])
-    handleFavorite(likedPost)
+    saveToStorage(likedPost)
+    // handleFavorite(likedPost)
+  }
+
+  const handleFavorite = (favorite) => {
+    const foundPost = epicData.find(post => post.title === favorite.title)
+    foundPost.isFavorited = !foundPost.isFavorited
   }
 
   const removeFromFavorites = (post) => {
@@ -54,6 +55,8 @@ const HomePage = () => {
   const toggleFavoritesDisplay = () => {
     setisFavoritedDisplayed(!isFavoritedDisplayed)
   }
+
+
 
   // LOCAL STORAGE
   const saveToStorage = (post) => {
