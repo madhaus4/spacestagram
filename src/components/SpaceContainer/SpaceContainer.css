@@ -1,18 +1,7 @@
 main {
-  /* width: 100vw; */
   height: fit-content;
-  /* background-color: #dddddda1; */
-  /* display: flex; */
-  /* overflow: auto; */
   padding: 0 5vh 10vh 5vh;
-  /* margin-bottom: 5vh; */
-  margin: 8% 1%;
-
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px; */
+  margin: 10% 1%;
 
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -60,6 +49,7 @@ main {
 @media screen and (max-width: 570px) {
   main {
     margin: 17% 1%;
+    
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
