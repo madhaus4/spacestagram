@@ -12,7 +12,7 @@ article {
   width: 95%;
 }
 
-img {
+.img-container > img {
   height: auto;
   width: 100%;
   border-radius: 1% 1% 0 0;
@@ -21,23 +21,20 @@ img {
 .article-btn-container {
   position: relative;
   z-index: 10;
-  left: 80%;
-  top: 25%;
+  left: 82%;
+  top: 0;
   width: 15%;
   padding: 5px;
 }
 
-/* .like-btn {
-  margin: 2% 3%;
-} */
+.favorite-btn {
+  height: 4vh;
+  width: auto;
+}
 
 .card-info {
   padding: 1.5%;
-  margin: -5% 1% 4% 1%;
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-start; */
-
+  margin: -10% 1% 4% 1%;
   display: block;
   text-align: -webkit-left;
 }
@@ -56,11 +53,4 @@ img {
   font-size: .65em;
   text-align: start;
   padding: 1.5% 0;
-}
-
-
-@media screen and (max-width: 640px) {
-  .article-btn-container {
-    left: 75%;
-  }
 }
