@@ -3,7 +3,7 @@ import './Header.css'
 function Header({ toggleFavoritesDisplay, isFavoritedDisplayed }) {
   return (
     <header>
-    <h1>Spacestagram</h1>
+    <h1 className='tracking-in-contract-bck'>Spacestagram</h1>
     <div className='btn-container'>
       <button 
         className='view-likes-btn'
