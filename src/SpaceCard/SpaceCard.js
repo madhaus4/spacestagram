@@ -1,4 +1,6 @@
 import './SpaceCard.css'
+import unfavoritedIcon from '../unfavorited.svg'
+import favoritedIcon from '../favorited.svg'
 
 const SpaceCard = ({ epicData, addToFavorites }) => {
   return (
@@ -7,11 +9,11 @@ const SpaceCard = ({ epicData, addToFavorites }) => {
         <img src={epicData.url} alt='this is something' />
       </div>
       <div className='article-btn-container'>
-        <button
-        className='like-btn'
+        <img
+          className='favorite-btn'
           onClick={() => addToFavorites(epicData)}
-          >Like
-        </button>
+          src={unfavoritedIcon} 
+        />
       </div>
       <div className='card-info'>
         <h2>{epicData.title}</h2>
