@@ -1,6 +1,6 @@
+import unfavoritedIcon from '../../images/unfavorited.svg'
+import favoritedIcon from '../../images/favorited.svg'
 import './SpaceCard.css'
-import unfavoritedIcon from '../images/unfavorited.svg'
-import favoritedIcon from '../images/favorited.svg'
 
 const SpaceCard = ({ epicData, updateFavorites }) => {
   return (
