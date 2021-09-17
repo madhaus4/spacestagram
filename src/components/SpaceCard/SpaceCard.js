@@ -10,7 +10,7 @@ const SpaceCard = ({ epicData, updateFavorites }) => {
       </div>
       <div className='article-btn-container'>
         <img
-          className='favorite-btn'
+          className='favorite-btn flip-vertical-right'
           onClick={() => updateFavorites(epicData)}
           src={!epicData.isFavorited ? unfavoritedIcon : favoritedIcon} 
         />
