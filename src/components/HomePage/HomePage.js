@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { getData } from '../../utils/apiCalls'
 import { cleanData } from '../../utils/utilities'
 import SpaceContainer from '../SpaceContainer/SpaceContainer';
 import Header from '../Header/Header';
@@ -9,14 +10,8 @@ const HomePage = () => {
   const [favoritedPosts, setFavoritedPosts] = useState([])
   const [isFavoritedDisplayed, setisFavoritedDisplayed] = useState(false)
 
-  const fetchData = () => {
-    fetch('https://api.nasa.gov/planetary/apod?api_key=1xvzSUJvKIPsf7PliA1VJPYWMTVNda8BblYK7z3r&count=10')
-      .then(res => res.json())
-      .then(data => setEpicData(cleanData(data)))
-  }
-
   useEffect(() => {
-      fetchData()
+      getData().then(data => setEpicData(cleanData(data)))
       retrieveFromStorage()
   }, [])
 
