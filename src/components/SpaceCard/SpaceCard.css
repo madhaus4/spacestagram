@@ -4,12 +4,17 @@
 
 article {
   height: fit-content;
+  width: 95%;
   margin: 5% 3%;
-  border: 1px solid #dddddd5c;
-  border-radius: 1%;
+  border: 1px solid #ccc9;;
+  border-radius: 3px;
   background-color: whitesmoke;
   display: inline-grid;
-  width: 95%;
+  box-shadow: 10px 5px 31px -22px rgba(0, 0, 0, 0.78);
+}
+
+article:hover {
+  border: 2px solid black;
 }
 
 .img-container > img {
@@ -32,6 +37,10 @@ article {
   width: auto;
 }
 
+.favorite-btn:hover {
+  cursor: pointer;
+}
+
 .card-info {
   padding: 1.5%;
   margin: -10% 1% 4% 1%;
@@ -40,17 +49,17 @@ article {
 }
 
 .card-info > h2 {
-  font-size: .75em;
   width: 70%;
+  font-size: .75em;
 }
 
 .card-info > h3 {
-  font-size: .65em;
   width: 70%;
+  font-size: .65em;
 }
 
 .card-info > p {
+  padding: 1.5% 0;
   font-size: .65em;
   text-align: start;
-  padding: 1.5% 0;
 }
