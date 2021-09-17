@@ -7,9 +7,7 @@ export const cleanData = (data) => {
 }
 
 const checkFavoritedPosts = (data) => {
-  // console.log('data', data)
   const favoritedPostsKeys = Object.keys(localStorage)
-  // console.log('favoritedPostsKeys', favoritedPostsKeys)
   const updatedData = data.reduce((arr, post) => {
     if (favoritedPostsKeys.includes(post.title)) {
       post.isFavorited = true;
@@ -17,6 +15,5 @@ const checkFavoritedPosts = (data) => {
     arr.push(post)
     return arr
   }, [])
-  // console.log('updatedData', updatedData)
   return updatedData
 }
