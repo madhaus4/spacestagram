@@ -82,6 +82,7 @@ const HomePage = () => {
       <footer>
         <p className='footer-text'>Thanks for visiting!</p>
         <img className='spacesta-logo' src={logo} />
+        <a href='https://www.nasa.gov/'>Click here to visit NASA's website</a>
       </footer>
     </>
   )
