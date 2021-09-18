@@ -49,6 +49,13 @@ header {
   display: flex;
 }
 
+header > p {
+  font-size: .65em;
+  align-self: flex-end;
+  margin-left: -65px;
+  font-style: italic;
+}
+
 /* h1 {
   height: 7vh;
   padding: 3vh;

@@ -7,6 +7,7 @@ function Header({ toggleFavoritesDisplay, isFavoritedDisplayed }) {
     <header>
     {/* <h1 className='tracking-in-contract-bck'>Spacestagram</h1> */}
     <img className='spacesta-logo-header' src={logo} />
+    <p>Brought to you by NASA's image API</p>
     <div class="container">
       <div class="center">
         <button class="btn"
