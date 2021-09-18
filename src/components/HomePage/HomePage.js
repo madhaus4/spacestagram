@@ -21,7 +21,7 @@ const HomePage = () => {
   const updateFavorites = (post) => {
     let foundFavorite = favoritedPosts.find(favorite => favorite.title === post.title)
 
-    handleFavorite(foundFavorite || post)
+    handleFavorite(post)
     foundFavorite ? removeFromFavorites(foundFavorite) : addToFavorites(post)
   }
 
@@ -36,8 +36,14 @@ const HomePage = () => {
   }
 
   const handleFavorite = (favorite) => {
-    const foundPost = epicData.find(post => post.title === favorite.title)
-    foundPost.isFavorited = !foundPost.isFavorited
+    console.log('favorite+++ ', favorite)
+    // console.log('epicData+++ ', epicData)
+    const foundPostInEpicData = epicData.find(post => post.title === favorite.title)
+    const foundPostInFavorited = favoritedPosts.find(post => post.title === favorite.title)
+
+    if (foundPostInEpicData || foundPostInFavorited) {
+      favorite.isFavorited = !favorite.isFavorited
+    }
   }
 
   const removeFromFavorites = (post) => {
@@ -82,11 +88,13 @@ const HomePage = () => {
       <footer>
         <div className='closing-title'>Refresh the page for more images</div>
         <p className='footer-text'>Thanks for visiting!</p>
-        <a href='#'><img 
-          className='spacesta-logo' 
-          src={logo} 
-          alt='spacestagram logo of a purple, blue, pinkish planet with a black semi circle and black font color' 
-        /></a>
+        <a href='#top'>
+          <img 
+            className='spacesta-logo' 
+            src={logo} 
+            alt='spacestagram logo of a purple, blue, pinkish planet with a black semi circle and black font color' 
+          />
+        </a>
         <a href='https://www.nasa.gov/'>Click here to visit NASA's website</a>
       </footer>
     </>
