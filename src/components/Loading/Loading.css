@@ -25,9 +25,14 @@
 
 
 @media (prefers-reduced-motion: no-preference) {
-  .loading-logo1,
+  .loading-logo1 {
+    animation: App-logo-spin 10.9s linear;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
   .loading-logo2 {
-    animation: App-logo-spin 10.2s linear;
+    animation: App-logo-spin2 10.9s linear;
   }
 }
 
@@ -37,5 +42,14 @@
   }
   to {
     transform: rotate(1360deg);
+  }
+}
+
+@keyframes App-logo-spin2 {
+  from {
+    transform: rotate(1360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
