@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { getData } from '../../utils/apiCalls'
 import { cleanData } from '../../utils/utilities'
 import Header from '../Header/Header';
+import Loading from '../Loading/Loading';
 import SpaceContainer from '../SpaceContainer/SpaceContainer';
 import logo from '../../images/spacestagramLogo-black.svg'
 import './HomePage.css'
 
 const HomePage = () => {
+  const [isLoading, setIsLoading] = useState(false)
   const [epicData, setEpicData] = useState([])
   const [favoritedPosts, setFavoritedPosts] = useState([])
   const [isFavoritedDisplayed, setisFavoritedDisplayed] = useState(false)
@@ -16,6 +18,7 @@ const HomePage = () => {
     getData()
       .then(data => setEpicData(cleanData(data)))
       .catch(error => console.log('ERR: ', error))
+      // .then(setIsLoading(false))
   }, [])
 
   const updateFavorites = (post) => {
@@ -77,17 +80,20 @@ const HomePage = () => {
   return (
     <>
       <Header 
+        isLoading={isLoading}
         isFavoritedDisplayed={isFavoritedDisplayed}
         toggleFavoritesDisplay={toggleFavoritesDisplay}
       />
-      <SpaceContainer 
+      <Loading />
+      {/* {epicData.length === 0 && <Loading />}
+      {!isLoading && <SpaceContainer 
         epicData={!isFavoritedDisplayed ? epicData : favoritedPosts}
         isFavoritedDisplayed={isFavoritedDisplayed}
         updateFavorites={updateFavorites}
-      />
+      />} */}
       <footer>
-        <div className='closing-title'>Refresh the page for more images</div>
-        <p className='footer-text'>Thanks for visiting!</p>
+        {/* <div className='closing-title'>Refresh the page for more images</div> */}
+        {isLoading && <p className='footer-text'>Thanks for visiting!</p>}
         <a href='#top'>
           <img 
             className='spacesta-logo' 
