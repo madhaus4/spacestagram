@@ -13,6 +13,7 @@ const SpaceCard = ({ epicData, updateFavorites }) => {
           className='favorite-btn flip-vertical-right'
           onClick={() => updateFavorites(epicData)}
           src={!epicData.isFavorited ? unfavoritedIcon : favoritedIcon} 
+          alt='heart shape with black outline when not favorited and black fill when post is favorited'
         />
       </div>
       <div className='card-info'>
