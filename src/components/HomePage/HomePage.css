@@ -1,12 +1,19 @@
 footer {
-  width: 98%;
+  width: 60%;
   height: 20vh;
-  border-top: 5px solid #000000d1;
+  border-top: 2px solid #000000d1;
   padding: 1vh;
+  /* background-color: #000000d1; */
+  overflow: none;
 }
 
 .footer-text {
   padding: 2vh;
-  font-size: 1.5em;
-  width: max-content;
+  font-size: 1em;
+  text-align: center;
+}
+
+.spacesta-logo {
+  height: 8vh;
+  width: auto;
 }
