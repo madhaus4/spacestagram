@@ -19,8 +19,8 @@ function Header({ isLoading, toggleFavoritesDisplay, isFavoritedDisplayed }) {
             <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
             <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />
           </svg>
-          {isLoading && <span>{isFavoritedDisplayed ? 'Home' : 'View Favorites'}</span>}
-          {!isLoading && <span>Welcome</span>}
+          {!isLoading && <span>{isFavoritedDisplayed ? 'Home' : 'View Favorites'}</span>}
+          {isLoading && <span>Welcome</span>}
         </button>
       </div>
     </div>

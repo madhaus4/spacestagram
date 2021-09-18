@@ -8,7 +8,7 @@ import logo from '../../images/spacestagramLogo-black.svg'
 import './HomePage.css'
 
 const HomePage = () => {
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   const [epicData, setEpicData] = useState([])
   const [favoritedPosts, setFavoritedPosts] = useState([])
   const [isFavoritedDisplayed, setisFavoritedDisplayed] = useState(false)
@@ -18,7 +18,7 @@ const HomePage = () => {
     getData()
       .then(data => setEpicData(cleanData(data)))
       .catch(error => console.log('ERR: ', error))
-      // .then(setIsLoading(false))
+      .then(setIsLoading(false))
   }, [])
 
   const updateFavorites = (post) => {
@@ -84,16 +84,16 @@ const HomePage = () => {
         isFavoritedDisplayed={isFavoritedDisplayed}
         toggleFavoritesDisplay={toggleFavoritesDisplay}
       />
-      <Loading />
-      {/* {epicData.length === 0 && <Loading />}
+      {/* <Loading /> */}
+      {epicData.length === 0 && <Loading />}
       {!isLoading && <SpaceContainer 
         epicData={!isFavoritedDisplayed ? epicData : favoritedPosts}
         isFavoritedDisplayed={isFavoritedDisplayed}
         updateFavorites={updateFavorites}
-      />} */}
+      />}
       <footer>
         {/* <div className='closing-title'>Refresh the page for more images</div> */}
-        {isLoading && <p className='footer-text'>Thanks for visiting!</p>}
+        {!isLoading && epicData.length > 0 && <p className='footer-text'>Thanks for visiting!</p>}
         <a href='#top'>
           <img 
             className='spacesta-logo' 
