@@ -1,0 +1,41 @@
+.loading-container {
+  height: 55vh;
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-logo1,
+.loading-logo2 {
+  height: 30vh;
+  width: auto;
+  padding: 1vh;
+  position: absolute;
+}
+
+.loading-logo1 {
+  z-index: 10;
+}
+
+.loading-logo2 {
+  z-index: 5;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .loading-logo1,
+  .loading-logo2 {
+    animation: App-logo-spin 10.2s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1360deg);
+  }
+}
