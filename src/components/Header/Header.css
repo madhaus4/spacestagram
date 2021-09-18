@@ -110,6 +110,8 @@ header {
   /* background-color:#000000d1; */
   background-color: #000000c2;
   color: whitesmoke;
+
+  display: flex;
 }
 
 h1 {
@@ -118,6 +120,12 @@ h1 {
   margin: 0 5vw;
   font-size: 2.75em;
   text-align: justify;
+}
+
+.spacesta-logo-header {
+  height: 11vh;
+  width: auto;
+  margin: 8px;
 }
 
 .tracking-in-contract-bck {
