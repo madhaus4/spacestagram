@@ -14,7 +14,10 @@ const SpaceContainer = ({ epicData, isFavoritedDisplayed, updateFavorites }) => 
   });
 
   return (
+    <>
     <main>{theEpic}</main>
+    {isFavoritedDisplayed && epicData.length === 0 && <p>There are no favorited posts</p>}
+    </>
   )
 }
 
