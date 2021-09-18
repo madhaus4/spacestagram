@@ -1,10 +1,15 @@
 footer {
   width: 60%;
-  height: 25vh;
-  border-top: 2px solid #000000d1;
+  height: 40vh;
+  /* border-top: 2px solid #000000d1; */
   padding: 1vh;
   display: flex;
   flex-direction: column;
+}
+
+.closing-title {
+  padding-bottom: 10vh;
+  border-bottom: 2px solid #000000d1;
 }
 
 .footer-text {

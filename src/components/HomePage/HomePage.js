@@ -80,8 +80,13 @@ const HomePage = () => {
         updateFavorites={updateFavorites}
       />
       <footer>
+        <div className='closing-title'>Refresh the page for more images</div>
         <p className='footer-text'>Thanks for visiting!</p>
-        <img className='spacesta-logo' src={logo} />
+        <a href='#'><img 
+          className='spacesta-logo' 
+          src={logo} 
+          alt='spacestagram logo of a purple, blue, pinkish planet with a black semi circle and black font color' 
+        /></a>
         <a href='https://www.nasa.gov/'>Click here to visit NASA's website</a>
       </footer>
     </>
