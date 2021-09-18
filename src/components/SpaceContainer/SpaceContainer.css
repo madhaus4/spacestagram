@@ -1,7 +1,7 @@
 main {
   height: fit-content;
   padding: 0 5vh 10vh 5vh;
-  margin: 10% 1%;
+  margin: 18vh 1vw;
 
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -11,12 +11,10 @@ main {
   column-gap: 15px;
 }
 
-@media screen and (max-width: 1200px) {
-  main {
-    margin: 11% 1%;
-  }  
-}
 
+
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 1000px) {
   main {
     -webkit-column-count: 2;
@@ -28,51 +26,13 @@ main {
   }
 }
 
-@media screen and (max-width: 820px) {
-  main {
-    margin: 12% 1%;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  main {
-    margin: 14% 1%;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  main {
-    margin: 15% 1%;
-  }
-}
-
 @media screen and (max-width: 570px) {
   main {
-    margin: 17% 1%;
-    
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
     -webkit-column-gap: 15px;
     -moz-column-gap: 15px;
     column-gap: 15px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  main {
-    margin: 20% 1%;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  main {
-    margin: 22% 1%;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  main {
-    margin: 30% 1%;
   }
 }
