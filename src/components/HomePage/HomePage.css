@@ -1,16 +1,17 @@
 footer {
   width: 60%;
-  height: 40vh;
-  /* border-top: 2px solid #000000d1; */
+  height: 27vh;
+  border-top: 2px solid #000000d1;
   padding: 1vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
-.closing-title {
+/* .closing-title {
   padding-bottom: 10vh;
   border-bottom: 2px solid #000000d1;
-}
+} */
 
 .footer-text {
   padding: 2vh;
@@ -22,5 +23,5 @@ footer {
 .spacesta-logo {
   height: 8vh;
   width: auto;
-  padding-bottom: 4vh;
+  padding: 4vh;
 }
