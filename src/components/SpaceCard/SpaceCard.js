@@ -26,3 +26,4 @@ const SpaceCard = ({ epicData, updateFavorites }) => {
 
 
 export default SpaceCard;
+
