@@ -3,6 +3,7 @@ import { getData } from '../../utils/apiCalls'
 import { cleanData } from '../../utils/utilities'
 import Header from '../Header/Header';
 import SpaceContainer from '../SpaceContainer/SpaceContainer';
+import logo from '../../images/spacestagramLogo-black.svg'
 import './HomePage.css'
 
 const HomePage = () => {
@@ -80,6 +81,7 @@ const HomePage = () => {
       />
       <footer>
         <p className='footer-text'>Thanks for visiting!</p>
+        <img className='spacesta-logo' src={logo} />
       </footer>
     </>
   )

@@ -1,10 +1,12 @@
+import logo from '../../images/spacestagramLogo-white.svg'
 import './Header.css'
+
 
 function Header({ toggleFavoritesDisplay, isFavoritedDisplayed }) {
   return (
     <header>
-    <h1 className='tracking-in-contract-bck'>Spacestagram</h1>
-
+    {/* <h1 className='tracking-in-contract-bck'>Spacestagram</h1> */}
+    <img className='spacesta-logo-header' src={logo} />
     <div class="container">
       <div class="center">
         <button class="btn"
