@@ -2,7 +2,7 @@ import logo from '../../images/spacestagramLogo-white.svg'
 import './Header.css'
 
 
-function Header({ toggleFavoritesDisplay, isFavoritedDisplayed }) {
+function Header({ isLoading, toggleFavoritesDisplay, isFavoritedDisplayed }) {
   return (
     <header>
     {/* <h1 className='tracking-in-contract-bck'>Spacestagram</h1> */}
@@ -19,7 +19,8 @@ function Header({ toggleFavoritesDisplay, isFavoritedDisplayed }) {
             <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
             <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />
           </svg>
-          <span>{isFavoritedDisplayed ? 'Home' : 'View Favorites'}</span>
+          {isLoading && <span>{isFavoritedDisplayed ? 'Home' : 'View Favorites'}</span>}
+          {!isLoading && <span>Welcome</span>}
         </button>
       </div>
     </div>
