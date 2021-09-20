@@ -15,7 +15,6 @@
 [Summary](#summary) |
 [Tech Used](#tech-used) |
 [Current Features](#current-features) |
-[Future Features & Noteworthy Limitations](#future-features-&-noteworthy-limitations) |
 [Preview](#preview) |
 [Reflection](#reflection) |
 [Contributors](#contributors) |
@@ -37,13 +36,8 @@ JavaScript | React | CSS | HTML5 | NASA-API
 ### Current Features
 - A user can favorite and unfavorite a post
 - The user's favorites persist upon page reload
-- Responsive design for layout
-- On refresh, the user will get a new set of 50 posts
-
-
-### Future Features & Noteworthy Limitations
-- A user login
-- Implement error handling
+- Responsive design for mobile to desktop layout
+- 
 
 
 ### Preview
