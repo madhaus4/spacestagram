@@ -4,7 +4,7 @@
 <div>
   <h1>Spacestagram</h1>
   <p>An application for users interested in browsing NASA imagery.</p>
-  <a href="https://the-film-vault.herokuapp.com/">View Deployed Site Here</a>
+  <a href="https://spacestagram-alpha.vercel.app/">View Deployed Site Here</a>
 </div>
 <br>
 
