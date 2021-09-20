@@ -37,7 +37,6 @@ JavaScript | React | CSS | HTML5 | NASA-API
 - A user can favorite and unfavorite a post
 - The user's favorites persist upon page reload
 - Responsive design for mobile to desktop layout
-- 
 
 
 ### Preview
@@ -45,10 +44,6 @@ JavaScript | React | CSS | HTML5 | NASA-API
 
 
 [Return to top](#spacestagram)
-
----
-
-
 
 ---
 
