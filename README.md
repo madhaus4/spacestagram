@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+<div align="right">
+  <img src="https://user-images.githubusercontent.com/76507607/133947552-8c29e038-b9d6-404a-94d4-d47ab66b0c30.png" />
+</div>
+<div>
+  <h1>Spacestagram</h1>
+  <p>An application for users interested in browsing NASA imagery.</p>
+  <a href="https://the-film-vault.herokuapp.com/">View Deployed Site Here</a>
+</div>
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+---
 
-### `npm start`
+[Summary](#summary) |
+[Tech Used](#tech-used) |
+[Current Features](#current-features) |
+[Future Features & Noteworthy Limitations](#future-features-&-noteworthy-limitations) |
+[Preview](#preview) |
+[Reflection](#reflection) |
+[Contributors](#contributors) |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ 
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Summary
+Modeled after instagram's user friendly layout, this application has a responsive design that can be used from mobile to desktop devices.
+ 
+### Tech Used
+JavaScript | React | CSS | HTML5 | NASA-API
 
-### `npm test`
+<div align='center'> <a href="https://github.com/nasa/apod-api">NASA api</a> & <a href="https://www.nasa.gov/">NASA website</a> </div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Current Features
+- A user can favorite and unfavorite a post
+- The user's favorites persist upon page reload
+- Responsive design for layout
+- On refresh, the user will get a new set of 50 posts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Future Features & Noteworthy Limitations
+- A user login
+- Implement error handling
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Preview
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[Return to top](#spacestagram)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Reflection
 
-### Analyzing the Bundle Size
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+[Return to top](#spacestagram)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
+### Contributors
+[Maria DelSignore](https://github.com/madhaus4) <br>
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[Return to top](#spacestaram)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
