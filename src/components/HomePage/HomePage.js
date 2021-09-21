@@ -39,8 +39,6 @@ const HomePage = () => {
   }
 
   const handleFavorite = (favorite) => {
-    console.log('favorite+++ ', favorite)
-    // console.log('epicData+++ ', epicData)
     const foundPostInEpicData = epicData.find(post => post.title === favorite.title)
     const foundPostInFavorited = favoritedPosts.find(post => post.title === favorite.title)
 
@@ -84,7 +82,6 @@ const HomePage = () => {
         isFavoritedDisplayed={isFavoritedDisplayed}
         toggleFavoritesDisplay={toggleFavoritesDisplay}
       />
-      {/* <Loading /> */}
       {epicData.length === 0 && <Loading />}
       {!isLoading && <SpaceContainer 
         epicData={!isFavoritedDisplayed ? epicData : favoritedPosts}
@@ -92,7 +89,6 @@ const HomePage = () => {
         updateFavorites={updateFavorites}
       />}
       <footer>
-        {/* <div className='closing-title'>Refresh the page for more images</div> */}
         {!isLoading && epicData.length > 0 && <p className='footer-text'>Thanks for visiting!</p>}
         <a href='#top'>
           <img 

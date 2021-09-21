@@ -43,7 +43,6 @@ header {
   height: 15vh;
   color: whitesmoke;
   border-bottom: 2px solid #808080c4;
-  /* background-color: #000000c2; */
   background: rgb(12,22,105);
   background: radial-gradient(circle, rgba(12,22,105,0.7455357142857143) 32%, rgba(34,9,65,0.7203256302521008) 98%);
   display: flex;
@@ -56,39 +55,11 @@ header > p {
   font-style: italic;
 }
 
-/* h1 {
-  height: 7vh;
-  padding: 3vh;
-  margin: 0 5vw;
-  font-size: 2.75em;
-  text-align: justify;
-} */
-
 .spacesta-logo-header {
   height: 11vh;
   width: auto;
   margin: 13px;
 }
-
-/* .tracking-in-contract-bck {
-	-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-} */
-
-/* .btn-container {
-  position: relative;
-  z-index: 14;
-  top: -7vh;
-  left: 80vw;
-  width: 15vw;
-  margin: 0;
-  display: flex;
-  justify-content: space-evenly;
-} */
-
-/* button {
-  margin: 0;
-} */
 
 button:hover {
   cursor: pointer;
