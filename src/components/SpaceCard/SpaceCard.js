@@ -6,7 +6,7 @@ const SpaceCard = ({ epicData, updateFavorites }) => {
   return (
     <article>
       <div className='img-container'>
-        <img src={epicData.url} alt='this is something' />
+        <img src={epicData.url} alt={`${epicData.title}`} />
       </div>
       <div className='article-btn-container'>
         <img
