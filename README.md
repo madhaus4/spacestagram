@@ -24,8 +24,8 @@
 ### Summary
 Modeled after instagram's user friendly layout, this application has a responsive design that can be used from mobile to desktop devices.
 
-When the user first lands on the page, they are greeted by 40 random NASA images.  There is a 'view favorites' button in the navigation bar where the user can view all of their favorited posts.  On either page, you can just scroll through the posts; each has a title, date, image and description of the image.  While on the home screen, the page can be refreshed to get another set of randomized images.  
- 
+When the user first lands on the page, there is a loading graphic if the page needs more time to load.  Then, they are greeted by 40 random NASA images.  The page can be refreshed to get another set of randomized images.  In the nav bar, there is a 'view favorites' button for the user to click and view all of their favorited posts.  If a user scrolls to the bottom of the page, the Spacesta logo can be clicked to be brought back to the top of the page.  When on the view favorites page, the button changes to a 'home' button.  And on either page, you can just scroll through the posts; each has a title, date, image and description of the image.  
+
 ### Tech Used
 JavaScript | React | CSS | HTML5 | NASA-API
 
